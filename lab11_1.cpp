@@ -10,7 +10,7 @@ string grade(int x){
     }else if(x==1){
         return "B+";
     }else if(x==2){
-        cout << "B";
+        return "B";
     }else if(x==3){
         return "C+";
     }else if(x==4){
@@ -29,10 +29,9 @@ string grade(int x){
 int main(){
     srand(time(0));
     int x=rand()%9;
-    cout << "Press Enter 3 times to reveal your future.\n";
+    cout << "Press Enter 3 times to reveal your future.";
     cin.get();
     cin.get();
     cin.get();
-    cout << "You will get "<< grade(x) << " in this 261102.";
-    return 0;
+    cout << "You will get " << grade(x) << " in this 261102.";
 }
